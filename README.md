@@ -1,17 +1,18 @@
-=== Die Gutenberg -- Die ! ===
-Contributors: Torres Digital -Sites → Lojas Virtuais e e-Commerce
-Tags: disable, gutenberg
+=== This is a simple Wodpress IP Loction Plugin! ===
+
+Contributors: Anderson Torres @atorresbr
+Tags: IP, Locationl, Lookup
 Requires at least: WordPress 4.4
 Tested up to: 5.2.1
 Stable tag:
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License: GPLv3 or later
+License URI: https://www.gnu.org/licenses/quick-guide-gplv3.pt-br.html
 
-This plugin disables the new Wordpress Editor.
+This plugin display a geolocation of the visitants on Worpdress Site.
 
 == Description ==
 
-Description: This plugin disables the new Wordpress Editor, the Gutenberg (aka Block Editor), and replaces it with the Classic Editor. The Gutenberg will be completely disable.
+Description: This plugin is a simple options to display on post or page a IP Location of visitants. Use the ShortCode to Display informations: [torresditial-geolocation]
 
 == Installation ==
 
@@ -50,7 +51,7 @@ This version fixes a security related bug. Upgrade immediately.
 
 == Copyright and licensing ==
 
-This plugin is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 2 of the License or (at your option) any later version.
+This plugin is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License or (at your option) any later version.
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
