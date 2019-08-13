@@ -8,7 +8,7 @@ Author: Torres Digital -Sites → Lojas Virtuais e e-Commerce
 Author URI: https://facebook.com/torresdigital */
 
      /**
-        *IP and GEO Location By Torres Digital !
+        *IP and GEO Location By Torres Digital ! // Source https://extreme-ip-lookup.com/
         *
         */
 function torres_digital_geo_location_shortcode( $atts, $content) {
