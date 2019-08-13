@@ -48,4 +48,4 @@ function torres_digital_geo_location_shortcode( $atts, $content) {
 
     }
 
-add_shortcode( 'geolocation', 'torres_digital_geo_location_shortcode' );
+add_shortcode( 'torresdigital-geolocation', 'torres_digital_geo_location_shortcode' );
