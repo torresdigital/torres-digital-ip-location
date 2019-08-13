@@ -1,8 +1,8 @@
 <?php /* The Silence is Gold!
 
-Plugin Name: Torres Digital IP Location
+Plugin Name: Torres Digital IP and Geolocation
 Plugin URI: http://torresdigital.com.br/
-Description: This plugin is a simple options to display on post or page a Geolocalization of visitants. <strong>Use the ShortCode to Display informations: [torresditial-geolocation]</strong>
+Description: This plugin is a simple options to display on post or page a Geolocalization of visitants. <strong>Use the ShortCode to Display informations: [torresdigital-geolocation]</strong>
 Version: 1.o
 Author: Torres Digital -Sites → Lojas Virtuais e e-Commerce
 Author URI: https://facebook.com/torresdigital */
@@ -35,15 +35,13 @@ function torres_digital_geo_location_shortcode( $atts, $content) {
  <p>Seu IP $user_ip..</p>
  <p>Cidade: $city.</p>
  <p>País $country</p>
- <p>Continente:$continent.</p>
+ <p>Geolocalização:$continent.</p>
  <p>Latitude $lat.</p>
- <p>Pretadora do Serviço de Internet: $ipName.</p>
-<p>Códido do País $countryCode.</p>
-<p>Região $region.</p>
-<p>Região $org.</p>
- <p>Região $isp</p>
- <p>Região $status.</p>
- <p>Mensagen / Statu $menssage</p>
+ <p>Longitude $lon.</p>
+ <p>ISP: $ipName.</p>
+ <p>Códido do País $countryCode.</p>
+ <p>Estado: $region.</p>
+ <p>Empresa $org.</p>
  </div>";
 
     }
@@ -55,5 +53,5 @@ add_action('wp_enqueue_scripts', 'callback_for_setting_up_scripts');
 function callback_for_setting_up_scripts() {
     wp_register_style( 'torres_digital_geo_location_shortcode', '/css/style.css' );
     wp_enqueue_style( 'torres_digital_geo_location_shortcode' );
-    wp_enqueue_script( 'torres_digital_geo_location_shortcode', '/js/myscript.js', array( 'jquery' ) );
+    wp_enqueue_script( 'torres_digital_geo_location_shortcode', 'http://locationofscript.com/myscript.js', array( 'jquery' ) );
 }
