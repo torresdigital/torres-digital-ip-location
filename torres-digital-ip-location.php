@@ -49,3 +49,11 @@ function torres_digital_geo_location_shortcode( $atts, $content) {
     }
 
 add_shortcode( 'torresdigital-geolocation', 'torres_digital_geo_location_shortcode' );
+
+/* Style */
+add_action('wp_enqueue_scripts', 'callback_for_setting_up_scripts');
+function callback_for_setting_up_scripts() {
+    wp_register_style( 'torres_digital_geo_location_shortcode', '/css/style.css' );
+    wp_enqueue_style( 'torres_digital_geo_location_shortcode' );
+    wp_enqueue_script( 'torres_digital_geo_location_shortcode', 'http://locationofscript.com/myscript.js', array( 'jquery' ) );
+}
