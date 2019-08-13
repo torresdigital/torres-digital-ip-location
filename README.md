@@ -1,10 +1,10 @@
 === This is a simple Wodpress IP Loction Plugin! ===
 
 Contributors: Anderson Torres @atorresbr <br/>
-Tags: IP, Locationl, Lookup<br/>
+Tags: IP, Location, Lookup<br/>
 Requires at least: WordPress 4.4<br/>
 Tested up to: 5.2.1<br/>
-Stable tag:<br/>
+/*Stable tag:<br/>*/
 License: GPLv3 or later<br/>
 License URI: https://www.gnu.org/licenses/quick-guide-gplv3.pt-br.html
 
