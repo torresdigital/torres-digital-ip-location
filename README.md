@@ -4,7 +4,6 @@ Contributors: Anderson Torres @atorresbr <br/>
 Tags: IP, Location, Lookup<br/>
 Requires at least: WordPress 4.4<br/>
 Tested up to: 5.2.1<br/>
-/*Stable tag:<br/>*/
 License: GPLv3 or later<br/>
 License URI: https://www.gnu.org/licenses/quick-guide-gplv3.pt-br.html
 
@@ -58,3 +57,5 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 You should have received a copy of the GNU General Public License along with this program. If not, see http://www.gnu.org/licenses/
 
 You can contact us at contato@torresdigital.tk
+
+https://www.facebook.com/music101reborn/videos/2019426014734357/
