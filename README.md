@@ -1,5 +1,8 @@
 === This is a simple Wodpress IP Loction Plugin! ===
 
+![Alt Text](https://repository-images.githubusercontent.com/202057105/905c2900-be54-11e9-8df7-638979ead712)
+
+
 Contributors: Anderson Torres @atorresbr <br/>
 Tags: IP, Location, Lookup<br/>
 Requires at least: WordPress 4.4<br/>
@@ -27,7 +30,7 @@ Description: This plugin is a simple options to display on post or page a IP Loc
 
 == Screenshots ==
 
-1. Image 01. [https://repository-images.githubusercontent.com/202057105/905c2900-be54-11e9-8df7-638979ead712]
+1. Image 01. [amend as relevant]
 2. Image 02. [amend as relevant]
 
 == Changelog ==
