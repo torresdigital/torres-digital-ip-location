@@ -32,7 +32,24 @@
     cursor: pointer;
     box-shadow: 0 0 0 rgba(204,169,44, 0.4);
 }
-.informacoes a:hover:focus {text-decoration: none} .informacoes a {color: #333}
+.informacoes a:hover, .informacoes a:focus {text-decoration: none} .informacoes a {color: #333; text-decoration: none}
+
+button, input[type="color"], input[type="reset"], input[type="button"], input[type="submit"] {
+    -moz-appearance: button;
+      -webkit-appearance: button;
+
+    padding-block-start: 0px;
+    padding-inline-end: 8px;
+    padding-block-end: 0px;
+    padding-inline-start: 8px;
+    border: 2px outset ThreeDLightShadow;
+    border-radius: 30px;
+    background-color: ButtonFace;
+    cursor: default;
+    box-sizing: border-box;
+    user-select: none;
+}
+.informacoes button { border-radius: 30px; }
 
 /*==================================================
 =            Bootstrap 3 Media Queries             =
