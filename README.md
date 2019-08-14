@@ -9,6 +9,9 @@ License URI: https://www.gnu.org/licenses/quick-guide-gplv3.pt-br.html
 
 This plugin display a geolocation of the visitants on Worpdress Site.
 
+![Alt Text](https://repository-images.githubusercontent.com/202057105/905c2900-be54-11e9-8df7-638979ead712)
+
+
 == Description ==
 
 Description: This plugin is a simple options to display on post or page a IP Location of visitants. Use the ShortCode to Display informations: [torresditial-geolocation]
