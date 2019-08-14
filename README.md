@@ -1,8 +1,5 @@
 === This is a simple Wodpress IP Loction Plugin! ===
 
-![Alt Text](https://repository-images.githubusercontent.com/202057105/905c2900-be54-11e9-8df7-638979ead712)
-
-
 Contributors: Anderson Torres @atorresbr <br/>
 Tags: IP, Location, Lookup<br/>
 Requires at least: WordPress 4.4<br/>
@@ -11,6 +8,9 @@ License: GPLv3 or later<br/>
 License URI: https://www.gnu.org/licenses/quick-guide-gplv3.pt-br.html
 
 This plugin display a geolocation of the visitants on Worpdress Site.
+
+![Alt Text](https://repository-images.githubusercontent.com/202057105/905c2900-be54-11e9-8df7-638979ead712)
+
 
 == Description ==
 
