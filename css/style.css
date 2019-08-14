@@ -13,7 +13,7 @@
     box-shadow: 0px 10px 40px 0px rgba(47,47,47,0.1);
     box-sizing: border-box;
 }
-.informacoes p {
+.informacoes p, .informacoes span {
 
     color: blue;
     font-size: 16px;
