@@ -34,12 +34,12 @@ function torres_digital_geo_location_shortcode( $atts, $content) {
  echo " <div id=\"informacoes\" class=\"informacoes\">
  <p>Seu IP: $user_ip</p>
  <p>Cidade: $city.</p>
+  <p>Estado: $region.</p>
  <p>País: $country ($countryCode)</p>
  <p>Geolocalização:$continent.</p>
  <p>Latitude: $lat.</p>
  <p>Longitu: $lon.</p>
  <p>ISP - Proverdor: $ipName</p>
- <p>Estado: $region.</p>
  <p>Empresa $org.</p>
  </div>";
 
