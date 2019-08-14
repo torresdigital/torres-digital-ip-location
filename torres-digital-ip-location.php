@@ -36,11 +36,11 @@ function torres_digital_geo_location_shortcode( $atts, $content) {
  <p>Cidade: $city.</p>
   <p>Estado: $region.</p>
  <p>País: $country ($countryCode)</p>
- <p>Geolocalização:$continent.</p>
  <p>Latitude: $lat.</p>
- <p>Longitu: $lon.</p>
+ <p>Longitude: $lon.</p>
+ <p>Geolocalização:$continent.</p>
+  <p>Empresa: $org.</p>
  <p>ISP - Proverdor: $ipName</p>
- <p>Empresa $org.</p>
  </div>";
 
     }
