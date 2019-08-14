@@ -1,7 +1,7 @@
 === This is a simple Wodpress IP Location Plugin! ===
 
 Contributors: Anderson Torres @atorresbr <br/>
-Tags: IP, Location, Lookup<br/>
+Tags: IP Location, IP Lookup<br/>
 Requires at least: WordPress 4.4<br/>
 Tested up to: 5.2.1<br/>
 License: GPLv3 or later<br/>

@@ -32,16 +32,42 @@ function torres_digital_geo_location_shortcode( $atts, $content) {
     $message = $geo->message;
 
  echo " <div id=\"informacoes\" class=\"informacoes\">
- <p>Seu IP: $user_ip</p>
+ <p>Seu IP: <span id=\"ip\"> $user_ip</span></p>
  <p>Cidade: $city.</p>
- <p>País: $country ($countryCode)</p>
- <p>Geolocalização:$continent.</p>
- <p>Latitude: $lat.</p>
- <p>Longitu: $lon.</p>
- <p>ISP - Proverdor: $ipName</p>
  <p>Estado: $region.</p>
- <p>Empresa $org.</p>
+ <p>País: $country ($countryCode)</p>
+ <p>Latitude: $lat.</p>
+ <p>Longitude: $lon.</p>
+ <p>Geolocalização:$continent.</p>
+ <p>Empresa: $org.</p>
+ <p id=\"url\">ISP - Proverdor: $ipName</p>
+ <button><a id=\"ip\" href=\"#\" name=\"copy_pre\">Copiar IP</a></button>
+
  </div>";
+
+    echo <<<ADMIN_OPTIONS
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript">
+
+ $("document").ready(function(){
+
+$(document).ready(function(){
+	$("a[name=copy_pre]").click(function() {
+		var id = $(this).attr('id');
+		var el = document.getElementById(id);
+		var range = document.createRange();
+		range.selectNodeContents(el);
+		var sel = window.getSelection();
+		sel.removeAllRanges();
+		sel.addRange(range);
+		document.execCommand('copy');
+		alert("IP copiado com sucesso!.");
+		return false;
+	    });
+    });
+});
+ </script>
+ADMIN_OPTIONS;
 
     }
 
@@ -53,5 +79,8 @@ function wpse_load_plugin_css() {
 
     wp_enqueue_style( 'style', $plugin_url . 'css/style.css' );
     wp_enqueue_style( 'style2', $plugin_url . 'css/style2.css' );
+
 }
 add_action( 'wp_enqueue_scripts', 'wpse_load_plugin_css' );
+
+?>
