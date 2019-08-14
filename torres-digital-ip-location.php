@@ -34,12 +34,11 @@ function torres_digital_geo_location_shortcode( $atts, $content) {
  echo " <div id=\"informacoes\" class=\"informacoes\">
  <p>Seu IP $user_ip..</p>
  <p>Cidade: $city.</p>
- <p>País $country</p>
+ <p>País $country - $countryCode</p>
  <p>Geolocalização:$continent.</p>
  <p>Latitude $lat.</p>
  <p>Longitude $lon.</p>
- <p>ISP: $ipName.</p>
- <p>Códido do País $countryCode.</p>
+ <p>ISP - Proverdor: $ipName</p>
  <p>Estado: $region.</p>
  <p>Empresa $org.</p>
  </div>";
@@ -49,9 +48,10 @@ function torres_digital_geo_location_shortcode( $atts, $content) {
 add_shortcode( 'torresdigital-geolocation', 'torres_digital_geo_location_shortcode' );
 
 /* Style */
-add_action('wp_enqueue_scripts', 'callback_for_setting_up_scripts');
-function callback_for_setting_up_scripts() {
-    wp_register_style( 'torres_digital_geo_location_shortcode', '/css/style.css' );
-    wp_enqueue_style( 'torres_digital_geo_location_shortcode' );
-    wp_enqueue_script( 'torres_digital_geo_location_shortcode', 'http://locationofscript.com/myscript.js', array( 'jquery' ) );
+function wpse_load_plugin_css() {
+    $plugin_url = plugin_dir_url( __FILE__ );
+
+    wp_enqueue_style( 'style', $plugin_url . 'css/style.css' );
+    wp_enqueue_style( 'style2', $plugin_url . 'css/style2.css' );
 }
+add_action( 'wp_enqueue_scripts', 'wpse_load_plugin_css' );
