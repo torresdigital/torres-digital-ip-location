@@ -41,7 +41,6 @@ function torres_digital_geo_location_shortcode( $atts, $content) {
  <p>Geolocalização:$continent.</p>
  <p>Empresa: $org.</p>
  <p id=\"url\">ISP - Proverdor: $ipName</p>
- <button onClick=\"copiarTexto()\">Copiar Texto</button>
  <button><a id=\"ip\" href=\"#\" name=\"copy_pre\">Copiar IP</a></button>
 
  </div>";
