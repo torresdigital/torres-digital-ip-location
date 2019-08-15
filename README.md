@@ -1,4 +1,4 @@
-=== This is a simple Wodpress IP Loction Plugin! ===
+# === This is a simple Wodpress IP Location Plugin! ===
 
 Contributors: Anderson Torres @atorresbr <br/>
 Tags: IP Location, IP Lookup<br/>
