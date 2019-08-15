@@ -43,13 +43,12 @@ button, input[type="color"], input[type="reset"], input[type="button"], input[ty
     padding-block-end: 0px;
     padding-inline-start: 8px;
     border: 2px outset ThreeDLightShadow;
-    border-radius: 30px;
     background-color: ButtonFace;
     cursor: default;
     box-sizing: border-box;
     user-select: none;
 }
-.informacoes button { border-radius: 30px; }
+
 
 /*==================================================
 =            Bootstrap 3 Media Queries             =
