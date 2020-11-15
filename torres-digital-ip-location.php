@@ -3,7 +3,7 @@
 Plugin Name: Torres Digital IP and Geolocation
 Plugin URI: http://torresdigital.com.br/
 Description: This plugin is a simple options to display on post or page a Geolocalization of visitants. <strong>Use the ShortCode to Display informations: [torresdigital-geolocation]</strong>
-Version: 1.o
+Version: 2.0.2020
 Author: Torres Digital -Sites → Lojas Virtuais e e-Commerce
 Author URI: https://facebook.com/torresdigital */
 
