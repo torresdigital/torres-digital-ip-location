@@ -47,27 +47,57 @@ function torres_digital_geo_location_shortcode( $atts, $content) {
 
     echo <<<ADMIN_OPTIONS
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/d3js/6.2.0/d3.min.js"></script> 
+
 <script type="text/javascript">
 
- $("document").ready(function(){
 
-$(document).ready(function(){
-	$("a[name=copy_pre]").click(function() {
-		var id = $(this).attr('id');
-		var el = document.getElementById(id);
-		var range = document.createRange();
-		range.selectNodeContents(el);
-		var sel = window.getSelection();
-		sel.removeAllRanges();
-		sel.addRange(range);
-		document.execCommand('copy');
-		alert("IP copiado com sucesso!.");
-		return false;
-	    });
-    });
+    function fallbackCopyTextToClipboard(text) {
+  var textArea = document.createElement("textarea");
+  textArea.value = text;
+  document.body.appendChild(textArea);
+  textArea.focus();
+  textArea.select();
+
+  try {
+    var successful = document.execCommand("copy");
+    var msg = successful ? "successful" : "unsuccessful";
+    console.log("Fallback: Copying text command was " + msg);
+  } catch (err) {
+    console.error("Fallback: Oops, unable to copy", err);
+  }
+
+  document.body.removeChild(textArea);
+}
+function copyTextToClipboard(text) {
+  if (!navigator.clipboard) {
+    fallbackCopyTextToClipboard(text);
+    return;
+  }
+  navigator.clipboard.writeText(text).then(
+    function() {
+      console.log("Async: IP Copiado com Sucesso !");
+    },
+    function(err) {
+      console.error("Async: Could not copy text: ", err);
+    }
+  );
+}
+
+var copyBobBtn = document.querySelector(".js-copy-bob-btn"),
+  copyJaneBtn = document.querySelector(".js-copy-jane-btn");
+
+copyBobBtn.addEventListener("click", function(event) {
+  copyTextToClipboard("Bob");
 });
+
+copyJaneBtn.addEventListener("click", function(event) {
+  copyTextToClipboard("Jane");
+});
+
+
+
  </script>
+
 ADMIN_OPTIONS;
 
     }
