@@ -41,7 +41,7 @@ function torres_digital_geo_location_shortcode( $atts, $content) {
  <p>Geolocalização:$continent.</p>
  <p>Empresa: $org.</p>
  <p id=\"url\">ISP - Proverdor: $ipName</p>
- <button><a id=\"ip\" href=\"#\" name=\"copy_pre\">Copiar IP</a></button>
+ <button><a id=\"ip\" onclick=\"CopyToClipboard('ip')\" href=\"#\" name=\"copy_pre\">Copiar IP</a></button>
 
  </div>";
 
@@ -50,50 +50,20 @@ function torres_digital_geo_location_shortcode( $atts, $content) {
 
 <script type="text/javascript">
 
-
-    function fallbackCopyTextToClipboard(text) {
-  var textArea = document.createElement("textarea");
-  textArea.value = text;
-  document.body.appendChild(textArea);
-  textArea.focus();
-  textArea.select();
-
-  try {
-    var successful = document.execCommand("copy");
-    var msg = successful ? "successful" : "unsuccessful";
-    console.log("Fallback: Copying text command was " + msg);
-  } catch (err) {
-    console.error("Fallback: Oops, unable to copy", err);
+function CopyToClipboard(containerid) {
+  if (document.selection) {
+    var range = document.body.createTextRange();
+    range.moveToElementText(document.getElementById(containerid));
+    range.select().createTextRange();
+    document.execCommand("copy");
+  } else if (window.getSelection) {
+    var range = document.createRange();
+    range.selectNode(document.getElementById(containerid));
+    window.getSelection().addRange(range);
+    document.execCommand("copy");
+    alert("TIP COPIADO COM SUCESSO !")
   }
-
-  document.body.removeChild(textArea);
 }
-function copyTextToClipboard(text) {
-  if (!navigator.clipboard) {
-    fallbackCopyTextToClipboard(text);
-    return;
-  }
-  navigator.clipboard.writeText(text).then(
-    function() {
-      console.log("Async: IP Copiado com Sucesso !");
-    },
-    function(err) {
-      console.error("Async: Could not copy text: ", err);
-    }
-  );
-}
-
-var copyBobBtn = document.querySelector(".js-copy-bob-btn"),
-  copyJaneBtn = document.querySelector(".js-copy-jane-btn");
-
-copyBobBtn.addEventListener("click", function(event) {
-  copyTextToClipboard("Bob");
-});
-
-copyJaneBtn.addEventListener("click", function(event) {
-  copyTextToClipboard("Jane");
-});
-
 
 
  </script>
