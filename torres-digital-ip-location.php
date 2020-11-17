@@ -61,7 +61,7 @@ function CopyToClipboard(containerid) {
     range.selectNode(document.getElementById(containerid));
     window.getSelection().addRange(range);
     document.execCommand("copy");
-    alert("TIP COPIADO COM SUCESSO !")
+    alert("IP COPIADO COM SUCESSO !")
   }
 }
 
